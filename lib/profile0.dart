@@ -15,11 +15,11 @@ class _ProfileState extends State<Profile> {
         children: [
           Stack(
             children: [
-              Container(
-                height: double.infinity,
-                color: Colors.black,
-                child: (Text('heelo')),
-              ),
+              // Container(
+              //   height: double.infinity,
+              //   color: Colors.black,
+              //   child: (Text('heelo')),
+              // ),
               Container(
                 height: 271.0,
                 decoration: new BoxDecoration(
