@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -11,15 +12,13 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: ListView(
         children: [
           Stack(
             children: [
               Container(
-                width: double.infinity,
-                height: double.infinity,
-                color: Colors.black,
-                child: (Text('heelo')),
+                height: 500,
+                color: Color.fromARGB(255, 250, 250, 250),
               ),
               Container(
                 height: 271.0,
@@ -33,21 +32,34 @@ class _ProfileState extends State<Profile> {
                 ),
               ),
               Positioned(
-                left: 160,
-                top: 150,
+                left: 90,
+                top: 190,
                 child: Container(
+                  height: 250,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       CircleAvatar(
                         radius: 50,
                         backgroundImage: NetworkImage(
                             'https://th.bing.com/th/id/OIP.LyzBjmzUbDU5C26HEvymCgAAAA?w=474&h=568&rs=1&pid=ImgDetMain'),
-                      )
+                      ),
+                      Text("Shivam kumar", style: GoogleFonts.poppins()),
+                      Text("shivam45@gmail.com | +92321",
+                          style: GoogleFonts.poppins())
                     ],
                   ),
                 ),
               )
             ],
+          ),
+          Container(
+            child: Column(
+              children: [
+                Text("Shivam kumar", style: GoogleFonts.poppins()),
+              ],
+            ),
           )
         ],
       ),
