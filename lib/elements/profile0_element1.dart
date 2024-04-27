@@ -11,16 +11,12 @@ class WithoutSuffix extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        ListTile(
-          // leading: Image.asset("$img"),
-          title: Text(
-            text,
-            style: TextStyle(fontSize: 20),
-          ),
-        )
-      ],
+    return ListView.builder(
+      itemCount: 5,
+      itemBuilder: (context, index) => ListTile(
+        leading: Icon(Icons.person),
+        title: Text("$text"),
+      ),
     );
   }
 }

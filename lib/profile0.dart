@@ -15,6 +15,7 @@ class _ProfileState extends State<Profile> {
       body: ListView(
         children: [
           Stack(
+            clipBehavior: Clip.none,
             children: [
               Container(
                 height: 500,
@@ -51,16 +52,9 @@ class _ProfileState extends State<Profile> {
                     ],
                   ),
                 ),
-              )
+              ),
             ],
           ),
-          Container(
-            child: Column(
-              children: [
-                Text("Shivam kumar", style: GoogleFonts.poppins()),
-              ],
-            ),
-          )
         ],
       ),
     );
